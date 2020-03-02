@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders h1 correctly 1`] = `
+<h1
+  className="text-center"
+>
+  Photos from mars
+</h1>
+`;
