@@ -1,0 +1,11 @@
+1:setup login page
+  --1:create login div
+  --2:make login functional
+    --1:maybe use library or custom code?
+  --3:style login div
+
+2:test quote machine
+
+3:test login page
+
+4:host on aws
