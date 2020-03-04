@@ -3,3 +3,4 @@ export default async () => {
   const json = await response.json();
   return json.photos;
 }
+//simple api call to nasa then return the json.photos array

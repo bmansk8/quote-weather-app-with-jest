@@ -1,7 +1,7 @@
 import React from "react";
 import { QuoteMachine } from "./QuoteMachine";
 import { NASARover } from "./NASARover";
-import { LogIn } from './LogIn';
+import {HomePage} from './HomePage';
 import {
   BrowserRouter as Router,
   Switch,
@@ -15,10 +15,10 @@ export const App = function App() {
       <Router>
         <div>
 
-          <nav className='navbar navbar-expand-lg navbar-light bg-light'>
+          <nav className='navbar navbar-expand-lg navbar-light bg-light fixed-top'>
             <ul className='navbar-nav mr-auto'>
               <li className='nav-item'>
-                <Link className='nav-link' to="/"> Home </Link>
+                <Link className='nav-link' to="/"> Home Page </Link>
               </li>
               <li className='nav-item'>
                 <Link className='nav-link' to="/quotes"> Quotes </Link>
@@ -32,7 +32,7 @@ export const App = function App() {
             <NASARover />
           </Route>
           <Route path="/">
-            <LogIn />
+            <HomePage />
           </Route>
         </Switch>
 

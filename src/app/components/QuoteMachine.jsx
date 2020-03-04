@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "../../../public/css/App.css";
+import quotes from './services/quotes'
 
 export const QuoteMachine = class QuoteMachine extends Component {
   constructor(props) {
@@ -12,17 +13,22 @@ export const QuoteMachine = class QuoteMachine extends Component {
   }
 
 
-  async componentDidMount() {
-      if (this.state.tweets && this.state.tweets.length) {
-        return;
-      }
-      const response = await fetch('https://gist.githubusercontent.com/camperbot/5a022b72e96c4c9585c32bf6a75f62d9/raw/e3c6895ce42069f0ee7e991229064f167fe8ccdc/quotes.json')
-      const json = await response.json();
-      this.setState({
-        tweets: json.quotes
-      })  
-
+ componentDidMount() {
+      this.getQuotes();
   }
+
+  async getQuotes(){
+    if (this.state.tweets && this.state.tweets.length) {
+      return;
+    }else{
+      const q = await quotes();
+      this.setState({
+        tweets: q
+      })
+    }
+  }
+
+  
 
    /*getWeather() {
      fetch('https://api.weather.gov/gridpoints/TOP/31,80/forecast')

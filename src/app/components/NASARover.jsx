@@ -11,9 +11,11 @@ export const NASARover = class NASARover extends Component {
 
   componentDidMount() {
     this.getImages();
+    //on mount get photos
   }
 
   async getImages() {
+    //getPhotos is abstracted away so it can be mocked with jest
     const imgs = await getPhotos();
     this.setState({
       imgs: imgs
@@ -21,7 +23,7 @@ export const NASARover = class NASARover extends Component {
   }
 
 
-
+//mapping through imgs and displaying them in imgs tags
   render() {
     return (
       <div>
