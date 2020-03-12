@@ -26,7 +26,7 @@ export const NASARover = class NASARover extends Component {
 //mapping through imgs and displaying them in imgs tags
   render() {
     return (
-      <div>
+      <div id='roverPhotos'>
         <h1 id='roverH1' className='text-center '>Photos from mars</h1>
         <div id='rover-photos'>
           {this.state.imgs.map((obj, index) => (

@@ -9,6 +9,15 @@
   text-decoration: none;
 }
 
+#homePage{
+  padding: 1rem;
+  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 0%, rgba(0,212,255,1) 100%);
+  width:400px;
+  margin-top: 8rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .imgs {
   width: 20rem;
   height: 20rem;

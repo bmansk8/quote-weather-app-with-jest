@@ -62,7 +62,6 @@ export const QuoteMachine = class QuoteMachine extends Component {
 
     return (
 
-      <div>
         <div id='quote-box' className="mx-auto shadow-lg rounded p-3 mb-5">
           <p id="text">{quote.quote}</p>
           <p id="author">{quote.author}</p>
@@ -72,7 +71,6 @@ export const QuoteMachine = class QuoteMachine extends Component {
             <a id="tweet-quote" href="https://twitter.com/intent/tweet" >Tweet me!</a>
           </button>
         </div>
-      </div>
 
     );
   }
